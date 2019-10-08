@@ -18,6 +18,7 @@ public class SumController {
 	public Double sum(@RequestParam(value = "val1", defaultValue = "0") double val1,
 			@RequestParam(value = "val2", defaultValue = "0") double val2) {
 		logger.debug("SUM: " + val1 + " + " + val2);
+		System.out.println("SUM: " + val1 + " + " + val2);
 		return val1 + val2;
 	}
 }
